@@ -44,7 +44,7 @@
       e.preventDefault();
 
       const data = Object.fromEntries(new FormData(form));
-      const webhookURL = 'https://script.google.com/macros/s/AKfycbwWT-CRa0mYco9_kld39GHKhaRDs7m5sFJkncqyyfQ2WMAo3496BvOYgn3DzACVtO0sWA/exec'; // <-- Replace this
+      const webhookURL = 'https://script.google.com/macros/s/AKfycbwWT-CRa0mYco9_kld39GHKhaRDs7m5sFJkncqyyfQ2WMAo3496BvOYgn3DzACVtO0sWA/exec';
 
       const res = await fetch(webhookURL, {
         method: 'POST',
@@ -63,7 +63,7 @@
     });
 
     // Admin panel CSV fetch
-    const csvURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRL89LeLYKIBil_sMImEbMQqhyL9hgYrbIHGPOU4OiqdOrfAxrk89eGi4jLeTn3BrS5WyzCOCZK0Kal/pub?gid=1482029101&single=true&output=csv'; // <-- Replace this
+    const csvURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRL89LeLYKIBil_sMImEbMQqhyL9hgYrbIHGPOU4OiqdOrfAxrk89eGi4jLeTn3BrS5WyzCOCZK0Kal/pub?gid=1482029101&single=true&output=csv'; 
 
     fetch(csvURL)
       .then(res => res.text())
